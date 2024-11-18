@@ -206,26 +206,26 @@ h2 {
 
 /* Layout for the two-sided work experience */
 .experience-wrapper {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    flex-wrap: wrap; /* Allow the items to wrap */
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr; /* Left, central line, right */
+    align-items: start;
+    grid-gap: 20px;
 }
 
 /* Left Side Work Experience */
 .experience-left {
-    width: 48%; /* Left side takes 48% of space */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Stack items vertically */
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 /* Right Side Work Experience */
 .experience-right {
-    width: 48%; /* Right side takes 48% of space */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Stack items vertically */
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 /* Central Line */
@@ -233,9 +233,6 @@ h2 {
     width: 2px;
     background-color: #6A1B9A; /* Purple color */
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
 }
 
 /* Work Experience Items */
@@ -244,7 +241,6 @@ h2 {
     align-items: center;
     margin-bottom: 30px;
     position: relative;
-    width: 100%;
 }
 
 .icon {
@@ -302,14 +298,7 @@ h2 {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .experience-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .experience-left,
-    .experience-right {
-        width: 100%;
-        margin-bottom: 20px;
+        grid-template-columns: 1fr; /* Stack vertically on mobile */
     }
 
     .central-line {
