@@ -107,6 +107,7 @@ section h2 {
 }
 
 /* Certifications */
+
 .certifications-grid {
     display: flex;
     justify-content: space-between;
@@ -130,10 +131,12 @@ section h2 {
 .certification-tile {
     background-color: #f4f4f4;
     border-radius: 8px;
-    padding: 15px;
+    padding: 10px 15px;  /* Reduced padding for shorter tiles */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;  /* Left-align text inside the tile */
+    max-height: 150px;  /* Limit height to keep tiles compact */
+    overflow: hidden;  /* Hide overflow content if text is too long */
 }
 
 .certification-tile:hover {
@@ -147,6 +150,7 @@ section h2 {
     font-size: 16px;
     font-weight: bold;
     display: block;
+    line-height: 1.4; /* Adjust line height for better spacing */
 }
 
 .certification-tile a:hover {
