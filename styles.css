@@ -210,25 +210,25 @@ h2 {
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    flex-wrap: wrap; /* Allow items to flow into the next column */
+    gap: 40px; /* Add some gap between the two sections */
 }
 
 /* Left Side Work Experience */
 .experience-left {
-    width: 48%; /* Left side takes 48% of space */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 20px; /* Add space between items */
+    width: 48%;
 }
 
 /* Right Side Work Experience */
 .experience-right {
-    width: 48%; /* Right side takes 48% of space */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 20px; /* Add space between items */
+    width: 48%;
 }
 
 /* Central Line */
@@ -236,6 +236,10 @@ h2 {
     width: 2px;
     background-color: #6A1B9A; /* Purple color */
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
 }
 
 /* Work Experience Items */
@@ -244,6 +248,7 @@ h2 {
     align-items: center;
     margin-bottom: 30px;
     position: relative;
+    width: 100%;
 }
 
 .icon {
