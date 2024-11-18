@@ -207,28 +207,8 @@ h2 {
 /* Layout for the two-sided work experience */
 .experience-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
     position: relative;
-    gap: 40px; /* Add some gap between the two sections */
-}
-
-/* Left Side Work Experience */
-.experience-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px; /* Add space between items */
-    width: 48%;
-}
-
-/* Right Side Work Experience */
-.experience-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px; /* Add space between items */
-    width: 48%;
 }
 
 /* Central Line */
@@ -239,7 +219,15 @@ h2 {
     position: absolute;
     top: 0;
     left: 50%;
-    z-index: 1;
+}
+
+/* Left Side Work Experience */
+.experience-left {
+    width: 60%; /* Adjust width to take up most of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px; /* Space between each work experience item */
 }
 
 /* Work Experience Items */
@@ -310,8 +298,7 @@ h2 {
         align-items: center;
     }
 
-    .experience-left,
-    .experience-right {
+    .experience-left {
         width: 100%;
         margin-bottom: 20px;
     }
