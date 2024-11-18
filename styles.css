@@ -60,6 +60,7 @@ body, html {
     color: #fff;
     text-align: center;
     position: relative;
+    backdrop-filter: blur(5px); /* Blur the background image */
 }
 
 #hero::before {
@@ -79,21 +80,23 @@ body, html {
 
 /* Profile Image */
 .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 3px solid #fff;
+    border: 4px solid #fff;
 }
 
 /* Hero Text Styling */
 #hero h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    color: #fff; /* Ensure font color is white */
     margin: 0;
 }
 
 #hero p {
     font-size: 1.5rem;
+    color: #fff;
 }
 
 #hero .social-icons a {
