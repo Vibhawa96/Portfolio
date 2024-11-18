@@ -57,7 +57,7 @@ body, html {
     justify-content: center;
     color: white;
     position: relative;
-    overflow: hidden;  /* Prevent content from overflowing */
+    overflow: hidden;
 }
 
 /* Blur effect for the background image */
@@ -68,9 +68,9 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: inherit;  /* Inherit the background image */
-    filter: blur(8px);  /* Apply blur */
-    z-index: -1;  /* Keep the blur effect behind the content */
+    background: inherit;
+    filter: blur(15px);  /* Increased blur */
+    z-index: -1;
 }
 
 /* Profile Image */
@@ -79,33 +79,35 @@ body, html {
     height: 250px;  /* Increased profile image size */
     border-radius: 50%;
     margin-bottom: 30px;  /* Increased margin for better spacing */
-    object-fit: cover;  /* Ensure the image maintains its aspect ratio */
+    object-fit: cover;
+    position: relative;
+    z-index: 1;  /* Ensure the image stays above the blurred background */
 }
 
 /* Main Title */
 #hero h2 {
     font-size: 3rem;  /* Larger font size for the main title */
-    margin-bottom: 10px;  /* Adjusted margin */
+    margin-bottom: 10px;
 }
 
 /* Description Text */
 #hero p {
     font-size: 1.5rem;  /* Larger text for the description */
-    margin-bottom: 20px;  /* Adjusted margin */
+    margin-bottom: 20px;
 }
 
 /* Social Icons */
 #hero .social-icons a {
     font-size: 1.5rem;  /* Larger social icons for better visibility */
-    margin: 0 10px;  /* Added spacing between icons */
+    margin: 0 10px;
 }
 
 /* Scroll Down Link */
 #hero .scroll-down {
-    font-size: 1.2rem;  /* Slightly larger text for the scroll down link */
+    font-size: 1.3rem;  /* Slightly larger text for the scroll down link */
     color: white;
     text-decoration: none;
-    margin-top: 40px;  /* Positioned further down */
+    margin-top: 50px;  /* Moved further down */
     border: 1px solid white;
     padding: 10px 20px;
     border-radius: 30px;
