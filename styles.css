@@ -208,11 +208,16 @@ footer a:hover {
 
 
 
-/* Timeline Container */
+/* Experience Section */
+#experience {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
 .timeline {
     position: relative;
     padding: 20px 0;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -220,11 +225,17 @@ footer a:hover {
 .timeline-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
 }
 
-.timeline-item:nth-child(odd) {
+/* Left side timeline items */
+.timeline-item.left {
+    flex-direction: row;
+}
+
+/* Right side timeline items */
+.timeline-item.right {
     flex-direction: row-reverse;
 }
 
@@ -266,7 +277,7 @@ footer a:hover {
 
 .timeline-date {
     font-size: 1rem;
-    color: #333;
+    color: #6A1B9A;
     margin-top: 5px;
 }
 
@@ -284,23 +295,23 @@ footer a:hover {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background-color: #f4f4f4;
+    background-color: #6A1B9A;
     z-index: -1;
 }
 
-.timeline-item:nth-child(odd)::before {
+.timeline-item.left::before {
     left: 50%;
     transform: translateX(-50%);
 }
 
-.timeline-item:nth-child(even)::before {
+.timeline-item.right::before {
     left: 50%;
     transform: translateX(-50%);
 }
 
 /* Hover Effects */
 .timeline-item:hover .timeline-content {
-    background-color: #f4f4f4;
+    background-color: #6A1B9A;
     color: white;
 }
 
@@ -319,8 +330,8 @@ footer a:hover {
         align-items: center;
     }
 
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
+    .timeline-item.left,
+    .timeline-item.right {
         flex-direction: column;
     }
 
