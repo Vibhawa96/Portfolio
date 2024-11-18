@@ -69,9 +69,9 @@ body, html {
     right: 0;
     bottom: 0;
     background: inherit;
-    background-color: rgba(0, 0, 0, 0.4);  /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 1);  /* Semi-transparent black overlay */
     z-index: -1;  /* Keep the dark overlay behind the content */
-    filter: blur(60px);  /* Optional: Add blur if you want */
+    filter: blur(1000px);  /* Optional: Add blur if you want */
 }
 
 /* Hero Content Container */
