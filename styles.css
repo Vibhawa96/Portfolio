@@ -206,14 +206,16 @@ h2 {
 
 /* Layout for the two-sided work experience */
 .experience-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 10px 1fr; /* Left, central line, right */
-    align-items: start;
-    grid-gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex-wrap: wrap; /* Allow items to flow into the next column */
 }
 
 /* Left Side Work Experience */
 .experience-left {
+    width: 48%; /* Left side takes 48% of space */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -222,6 +224,7 @@ h2 {
 
 /* Right Side Work Experience */
 .experience-right {
+    width: 48%; /* Right side takes 48% of space */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -298,7 +301,14 @@ h2 {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .experience-wrapper {
-        grid-template-columns: 1fr; /* Stack vertically on mobile */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-left,
+    .experience-right {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .central-line {
