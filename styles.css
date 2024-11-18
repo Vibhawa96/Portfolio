@@ -69,8 +69,8 @@ body, html {
     right: 0;
     bottom: 0;
     background: inherit;
-    filter: blur(2px);  /* 60px blur effect for stronger background blur */
-    z-index: -2;  /* Keeps the blur behind the content */
+    filter: blur(10000px);  /* 60px blur effect for stronger background blur */
+    z-index: -5;  /* Keeps the blur behind the content */
 }
 
 /* Hero Content Container */
