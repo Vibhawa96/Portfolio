@@ -1,144 +1,31 @@
-/* General Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    scroll-behavior: smooth;
-}
-
-section {
-    padding: 100px 20px;
-    min-height: 100vh;
+/* Education & Publications Section */
+#education-publications .education-publications-grid {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-section:nth-child(even) {
-    background: #f9f9f9;
-}
-
-footer {
-    background: #222;
-    color: #fff;
-    padding: 40px 20px;
-}
-
-.contact-link {
-    color: #fff;
-    text-decoration: none;
-}
-
-.contact-link:visited {
-    color: #fff;
-}
-
-/* Navbar */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-}
-
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.navbar .logo {
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-.nav-links a:hover {
-    background: #007bff;
-    color: #fff;
-}
-
-/* Hero Section */
-#hero {
-    height: 100vh;
-    background: url('northern-lights.jpg') no-repeat center center/cover;
-    color: #fff;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-#hero .container {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 4px solid #fff;
-}
-
-/* Certifications Grid */
-.certifications-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
     flex-wrap: wrap;
+    gap: 40px;
 }
 
-.certifications-column {
-    width: 45%;
+.education-column,
+.publications-column {
+    flex: 1 1 45%;
 }
 
-.certifications-column ul {
+.education-column ul,
+.publications-column ul {
     list-style: none;
     padding: 0;
 }
 
-.certifications-column li {
-    margin-bottom: 15px;
+.education-column ul li,
+.publications-column ul li {
+    margin-bottom: 20px;
 }
 
-.certifications-column a {
-    text-decoration: none;
+.publications-column ul li a {
     color: #007bff;
-    font-weight: bold;
+    text-decoration: none;
 }
 
-.certifications-column a:hover {
+.publications-column ul li a:hover {
     text-decoration: underline;
 }
