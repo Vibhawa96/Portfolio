@@ -111,3 +111,34 @@ footer {
     margin-bottom: 20px;
     border: 4px solid #fff;
 }
+
+/* Certifications Grid */
+.certifications-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.certifications-column {
+    width: 45%;
+}
+
+.certifications-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certifications-column li {
+    margin-bottom: 15px;
+}
+
+.certifications-column a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.certifications-column a:hover {
+    text-decoration: underline;
+}
