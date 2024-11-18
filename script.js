@@ -29,3 +29,18 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+// Add event listeners to toggle timeline tile visibility
+document.querySelectorAll('.timeline-item').forEach(item => {
+    item.addEventListener('click', function() {
+        const tile = this.querySelector('.timeline-tile');
+        
+        // Toggle visibility of the tile content
+        if (tile.style.display === 'none' || tile.style.display === '') {
+            tile.style.display = 'block';
+        } else {
+            tile.style.display = 'none';
+        }
+    });
+});
+

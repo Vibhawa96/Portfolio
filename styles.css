@@ -187,28 +187,7 @@ footer a:hover {
 }
 
 /* Experience Section */
-#experience {
-    padding: 80px 20px;
-    background-color: #f8f8f8;
-}
 
-.experience-item {
-    margin-bottom: 30px;
-}
-
-.experience-item h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
-.experience-item p {
-    font-size: 1.2rem;
-}
-
-
-
-
-/* Experience Section */
 #experience {
     padding: 80px 20px;
     background-color: #f8f8f8;
@@ -227,6 +206,7 @@ footer a:hover {
     align-items: center;
     margin-bottom: 30px;
     position: relative;
+    width: 100%;
 }
 
 /* Left side timeline items */
@@ -284,6 +264,21 @@ footer a:hover {
 .timeline-content p {
     font-size: 1.1rem;
     color: #555;
+}
+
+/* Timeline Tile (Expanded Content) */
+.timeline-tile {
+    display: none;  /* Hidden by default */
+    background-color: #6A1B9A;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-tile h3 {
+    margin-top: 0;
 }
 
 /* Connecting Line */
