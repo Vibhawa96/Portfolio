@@ -177,10 +177,11 @@ footer a:hover {
 #about {
     padding: 80px 20px;
     text-align: left;
+    font-size: 90px;
 }
 
 #about p {
-    font-size: 2 rem;
+    font-size: 60px;
     margin-top: 20px;
     text-align: left;		
 }
