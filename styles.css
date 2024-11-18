@@ -57,7 +57,7 @@ body, html {
     position: relative;
     overflow: hidden;
     color: White;
-    opacity: 0.5;
+    opacity: 0.8;
     flex-direction: column;
 }
 
