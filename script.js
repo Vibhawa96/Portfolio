@@ -16,31 +16,13 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// JavaScript for Timeline Scroll Effect
-window.addEventListener('scroll', function() {
-    const timelineItems = document.querySelectorAll('.timeline-item');
+// Select all work experience tiles
+const experienceTiles = document.querySelectorAll('.experience-tile');
 
-    timelineItems.forEach(item => {
-        const rect = item.getBoundingClientRect();
-        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-            item.classList.add('active');
-        } else {
-            item.classList.remove('active');
-        }
+// Add click event to each tile
+experienceTiles.forEach(tile => {
+    tile.addEventListener('click', function() {
+        // Toggle the 'active' class to show/hide details
+        this.classList.toggle('active');
     });
 });
-
-// Add event listeners to toggle timeline tile visibility
-document.querySelectorAll('.timeline-item').forEach(item => {
-    item.addEventListener('click', function() {
-        const tile = this.querySelector('.timeline-tile');
-        
-        // Toggle visibility of the tile content
-        if (tile.style.display === 'none' || tile.style.display === '') {
-            tile.style.display = 'block';
-        } else {
-            tile.style.display = 'none';
-        }
-    });
-});
-
