@@ -107,6 +107,11 @@ body, html {
 .text-content p {
     font-size: 1.4rem;
     margin-bottom: 20px;
+    color: #6A1B9A; 
+}
+.text-content p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
 }
 
 /* Social Icons */
