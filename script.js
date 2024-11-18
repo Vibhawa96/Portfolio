@@ -15,3 +15,17 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         });
     });
 });
+
+// JavaScript for Timeline Scroll Effect
+window.addEventListener('scroll', function() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    timelineItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+});
