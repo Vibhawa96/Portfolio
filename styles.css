@@ -16,10 +16,11 @@ body, html {
 /* Navbar Styling */
 .navbar {
     position: fixed;
+    top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
     padding: 15px 0;
     z-index: 1000;
+    background: transparent; /* Transparent background */
 }
 
 .navbar .container {
@@ -29,11 +30,9 @@ body, html {
 }
 
 .navbar .logo {
-    color: #fff;
-    margin: 0;
+    color: #000; /* Adjust text color for visibility */
     text-decoration: none;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .nav-links {
@@ -46,7 +45,7 @@ body, html {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -63,7 +62,6 @@ body, html {
     color: #fff;
     text-align: center;
     position: relative;
-    backdrop-filter: blur(5px); /* Blur the background image */
 }
 
 #hero::before {
@@ -73,15 +71,9 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+    background: rgba(0, 0, 0, 0.5); /* Add contrast for text */
 }
 
-#hero .container {
-    position: relative;
-    z-index: 1;
-}
-
-/* Profile Image */
 .profile-image {
     width: 200px;
     height: 200px;
@@ -90,42 +82,38 @@ body, html {
     border: 4px solid #fff;
 }
 
-/* Hero Text Styling */
 #hero h2 {
     font-size: 3.5rem;
-    color: #fff; /* Ensure font color is white */
     margin: 0;
 }
 
 #hero p {
     font-size: 1.8rem;
-    color: #fff;
 }
 
-#hero .social-icons a {
+.social-icons a {
     color: #fff;
     margin: 0 10px;
     font-size: 1.5rem;
 }
 
-#hero .scroll-down {
+.scroll-down {
     margin-top: 20px;
     color: #fff;
     text-decoration: none;
     border: 2px solid #fff;
     padding: 10px 15px;
-    display: inline-block;
     transition: background 0.3s;
 }
 
-#hero .scroll-down:hover {
+.scroll-down:hover {
     background: #fff;
     color: #000;
 }
 
 /* Section Styling */
 section {
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 h2 {
@@ -133,11 +121,6 @@ h2 {
     color: #333;
 }
 
-.experience-item {
-    margin-bottom: 20px;
-}
-
-/* Footer Styling */
 footer {
     background: #222;
     color: #fff;
@@ -145,21 +128,7 @@ footer {
     text-align: center;
 }
 
-footer .social-icons a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 1.5rem;
-}
-
 .contact-link {
     color: #fff;
     text-decoration: none;
-}
-
-.contact-link:visited {
-    color: #fff; /* Ensures it stays white after being clicked */
-}
-
-.contact-link:hover {
-    text-decoration: underline; /* Optional: underline effect on hover */
 }
