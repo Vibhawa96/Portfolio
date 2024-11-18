@@ -6,6 +6,16 @@ body, html {
     scroll-behavior: smooth; /* Smooth scrolling for navigation links */
 }
 
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 /* Navbar Styles */
 .navbar {
     position: fixed;
@@ -122,11 +132,6 @@ body, html {
 section {
     padding: 100px 20px;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     background: #f4f4f4;
 }
 
@@ -134,6 +139,7 @@ section:nth-child(even) {
     background: #eaeaea;
 }
 
+/* Footer */
 footer {
     background: #222;
     color: #fff;
