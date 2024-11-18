@@ -208,14 +208,24 @@ h2 {
 .experience-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     position: relative;
+    flex-wrap: wrap; /* Allow the items to wrap */
 }
 
 /* Left Side Work Experience */
-.experience-left,
+.experience-left {
+    width: 48%; /* Left side takes 48% of space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Stack items vertically */
+}
+
+/* Right Side Work Experience */
 .experience-right {
-    width: 45%; /* Both sides will take up 45% of the space */
+    width: 48%; /* Right side takes 48% of space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Stack items vertically */
 }
 
 /* Central Line */
