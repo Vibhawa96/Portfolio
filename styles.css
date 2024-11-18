@@ -72,11 +72,6 @@ footer {
     border-radius: 5px;
 }
 
-.nav-links a.active {
-    background: #007bff;
-    color: #fff;
-}
-
 .nav-links a:hover {
     background: #007bff;
     color: #fff;
