@@ -56,7 +56,7 @@ body, html {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    color: #6A1B9A;
+    color: White;
     flex-direction: column;
 }
 
@@ -69,7 +69,7 @@ body, html {
     right: 0;
     bottom: 0;
     background: inherit;
-    background-color: rgba(0, 0, 0, 1);  /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 10);  /* Semi-transparent black overlay */
     z-index: -1;  /* Keep the dark overlay behind the content */
     filter: blur(1000px);  /* Optional: Add blur if you want */
 }
@@ -104,11 +104,6 @@ body, html {
     margin-bottom: 15px;
 }
 
-.text-content p {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    color: #6A1B9A; 
-}
 .text-content p {
     font-size: 1.4rem;
     margin-bottom: 20px;
