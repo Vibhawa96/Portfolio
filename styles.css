@@ -52,70 +52,71 @@ body, html {
     height: 100vh;
     background: url('northern-lights.jpg') no-repeat center center/cover;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
     position: relative;
     overflow: hidden;
+    color: white;
+    flex-direction: column;
 }
 
-/* Blur effect for the background image */
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    filter: blur(15px);  /* Further increased blur */
-    z-index: -1;
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+    max-width: 1200px;
 }
 
-/* Profile Image */
-#hero .profile-image {
-    width: 300px;  /* Increased profile image size */
-    height: 300px;  /* Increased profile image size */
+.profile-image {
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    margin-bottom: 30px;
     object-fit: cover;
-    position: relative;
-    z-index: 1;  /* Ensure the image stays above the blurred background */
+    margin-right: 40px;
 }
 
-/* Main Title */
-#hero h2 {
-    font-size: 3.5rem;  /* Larger font size for the main title */
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    font-size: 3rem;
     margin-bottom: 15px;
 }
 
-/* Description Text */
-#hero p {
-    font-size: 1.6rem;  /* Larger text for the description */
+.text-content p {
+    font-size: 1.4rem;
     margin-bottom: 20px;
 }
 
-/* Social Icons */
-#hero .social-icons a {
-    font-size: 1.8rem;  /* Larger social icons for better visibility */
-    margin: 0 12px;
+.social-icons a {
+    font-size: 1.8rem;
+    margin-right: 20px;
+    color: white;
+    transition: color 0.3s ease;
 }
 
-/* Scroll Down Link */
-#hero .scroll-down {
-    font-size: 1.4rem;  /* Larger text for the scroll down link */
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.scroll-down {
+    font-size: 1.4rem;
     color: white;
     text-decoration: none;
-    margin-top: 70px;  /* Moved further down to avoid overlap */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     border: 1px solid white;
     padding: 12px 25px;
     border-radius: 30px;
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect for Scroll Down Link */
-#hero .scroll-down:hover {
+.scroll-down:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -129,85 +130,10 @@ section h2 {
     margin-bottom: 40px;
 }
 
-.education-publications-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.education-column,
-.publications-column {
-    flex: 1;
-}
-
-.education-column ul,
-.publications-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.education-column ul li,
-.publications-column ul li {
-    margin-bottom: 20px;
-}
-
-.publications-column a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.publications-column a:hover {
-    text-decoration: underline;
-}
-
-/* Certifications */
-.certifications-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.certifications-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    border-left: 3px solid #007bff;  /* Blue border for left column */
-    padding-left: 20px;
-}
-
-.certifications-column:first-child {
-    border-left: none;  /* No left border on the first column */
-}
-
-.certification-tile {
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    padding: 10px 15px;  /* Reduced padding for shorter tiles */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;  /* Left-align text inside the tile */
-    max-height: 150px;  /* Limit height to keep tiles compact */
-    overflow: hidden;  /* Hide overflow content if text is too long */
-}
-
-.certification-tile:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.certification-tile a {
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    display: block;
-    line-height: 1.4; /* Adjust line height for better spacing */
-}
-
-.certification-tile a:hover {
-    color: #007bff;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Footer */
@@ -224,4 +150,139 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* About Section */
+#about {
+    padding: 80px 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Experience Section */
+#experience {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.experience-item h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.experience-item p {
+    font-size: 1.2rem;
+}
+
+/* Education & Publications Section */
+#education-publications {
+    padding: 80px 20px;
+}
+
+.education-publications-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.education-column, .publications-column {
+    flex: 1;
+}
+
+.education-column ul, .publications-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education-column ul li, .publications-column ul li {
+    margin-bottom: 15px;
+}
+
+.education-column h3, .publications-column h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.publications-column a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.publications-column a:hover {
+    text-decoration: underline;
+}
+
+/* Certifications Section */
+#certifications {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+.certifications-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.certifications-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 3px solid #007bff;
+    padding-left: 20px;
+}
+
+.certifications-column:first-child {
+    border-left: none;
+}
+
+.certification-tile {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-tile a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.certification-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certification-tile a:hover {
+    color: #007bff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .scroll-down {
+        bottom: 40px;
+    }
 }
