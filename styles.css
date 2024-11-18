@@ -186,4 +186,40 @@ section h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;  /* Left-align text inside the tile */
-    max-height: 150px;  /* Limit height to k
+    max-height: 150px;  /* Limit height to keep tiles compact */
+    overflow: hidden;  /* Hide overflow content if text is too long */
+}
+
+.certification-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certification-tile a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    line-height: 1.4; /* Adjust line height for better spacing */
+}
+
+.certification-tile a:hover {
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
