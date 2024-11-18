@@ -60,6 +60,20 @@ body, html {
     flex-direction: column;
 }
 
+/* Blur effect for the background image */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(60px);  /* 60px blur effect for stronger background blur */
+    z-index: -1;  /* Keeps the blur behind the content */
+}
+
+/* Hero Content Container */
 .hero-content {
     display: flex;
     align-items: center;
@@ -69,14 +83,17 @@ body, html {
     max-width: 1200px;
 }
 
+/* Profile Image */
 .profile-image {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 40px;
+    z-index: 1;  /* Keeps the profile image above the blurred background */
 }
 
+/* Text Content (Name, Description, Social Icons) */
 .text-content {
     flex: 1;
 }
@@ -91,6 +108,7 @@ body, html {
     margin-bottom: 20px;
 }
 
+/* Social Icons */
 .social-icons a {
     font-size: 1.8rem;
     margin-right: 20px;
@@ -102,6 +120,7 @@ body, html {
     color: #007bff;
 }
 
+/* Scroll Down Link */
 .scroll-down {
     font-size: 1.4rem;
     color: white;
