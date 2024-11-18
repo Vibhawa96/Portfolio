@@ -13,6 +13,7 @@ body, html {
     padding: 20px;
 }
 
+/* Navbar Styling */
 .navbar {
     position: fixed;
     width: 100%;
@@ -47,16 +48,45 @@ body, html {
     font-weight: bold;
 }
 
+/* Hero Section */
 #hero {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: #222;
+    background-size: cover;
+    background-position: center;
     color: #fff;
     text-align: center;
+    position: relative;
 }
 
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+}
+
+#hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+}
+
+/* Hero Text Styling */
 #hero h2 {
     font-size: 3rem;
     margin: 0;
@@ -87,6 +117,7 @@ body, html {
     color: #000;
 }
 
+/* Section Styling */
 section {
     padding: 60px 0;
 }
@@ -100,6 +131,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Footer Styling */
 footer {
     background: #222;
     color: #fff;
