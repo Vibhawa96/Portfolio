@@ -48,6 +48,7 @@ body, html {
 }
 
 /* Hero Section */
+
 #hero {
     height: 100vh;
     background: url('northern-lights.jpg') no-repeat center center/cover;
@@ -59,11 +60,42 @@ body, html {
 }
 
 #hero .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 250px;  /* Increased profile image size */
+    height: 250px;  /* Increased profile image size */
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;  /* Increased margin for better spacing */
 }
+
+#hero h2 {
+    font-size: 3rem;  /* Larger font size for the main title */
+    margin-bottom: 10px;  /* Reduced margin for better spacing */
+}
+
+#hero p {
+    font-size: 1.5rem;  /* Larger text for the description */
+    margin-bottom: 20px;  /* Adjusted margin */
+}
+
+#hero .social-icons a {
+    font-size: 1.5rem;  /* Larger social icons for better visibility */
+    margin: 0 10px;  /* Added spacing between icons */
+}
+
+#hero .scroll-down {
+    font-size: 1.2rem;  /* Slightly larger text for the scroll down link */
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .scroll-down:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 
 /* Section */
 section {
