@@ -69,7 +69,7 @@ body, html {
     right: 0;
     bottom: 0;
     background: inherit;
-    filter: blur(40px);  /* Increased blur */
+    filter: blur(80px);  /* Increased blur */
     z-index: -1;
 }
 
