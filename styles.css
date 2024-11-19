@@ -218,10 +218,42 @@ footer a:hover {
     gap: 20px; /* Space between each work experience item */
 }
 
+/* Experience Section */
+#experience {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+/* General container for the work experience */
+.experience-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Central Line */
+.central-line {
+    width: 2px;
+    background-color: #6A1B9A; /* Purple color */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+/* Left Side Work Experience */
+.experience-left {
+    width: 60%; /* Adjust width to take up most of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px; /* Space between each work experience item */
+}
+
 /* Work Experience Items */
 .experience-item {
     display: flex;
-    align-items: flex-start; /* Align logo and text horizontally */
+    align-items: flex-start; /* Align items at the start */
     margin-bottom: 30px;
     position: relative;
     width: 100%;
@@ -251,6 +283,8 @@ footer a:hover {
     margin: 0;
     font-size: 1.6rem;
     color: #333;
+    text-align: center; /* Center the job title */
+    width: 100%; /* Make it take the full width of the container */
 }
 
 /* Timeline date styling */
@@ -259,6 +293,8 @@ footer a:hover {
     color: #6A1B9A;
     margin-top: 5px;
     margin-bottom: 20px; /* Added margin-bottom for spacing between date and description */
+    text-align: center; /* Center the timeline */
+    width: 100%; /* Make it take the full width of the container */
 }
 
 /* Description list styling */
@@ -306,6 +342,11 @@ footer a:hover {
     /* Adjust logo size for mobile */
     .company-logo {
         width: 40px; /* Slightly smaller logo for mobile */
+    }
+
+    /* Adjust title and date for better alignment on mobile */
+    .experience-content h3, .timeline-date {
+        text-align: center;
     }
 }
 
