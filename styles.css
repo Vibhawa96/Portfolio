@@ -218,10 +218,42 @@ footer a:hover {
     gap: 20px; /* Space between each work experience item */
 }
 
+/* Experience Section */
+#experience {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+/* General container for the work experience */
+.experience-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Central Line */
+.central-line {
+    width: 2px;
+    background-color: #6A1B9A; /* Purple color */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+/* Left Side Work Experience */
+.experience-left {
+    width: 60%; /* Adjust width to take up most of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px; /* Space between each work experience item */
+}
+
 /* Work Experience Items */
 .experience-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 30px;
     position: relative;
     width: 100%;
@@ -248,6 +280,7 @@ footer a:hover {
     font-size: 1rem;
     color: #6A1B9A;
     margin-top: 5px;
+    margin-bottom: 15px; /* Added margin-bottom for spacing between date and description */
 }
 
 /* Description list styling */
