@@ -15,3 +15,14 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         });
     });
 });
+
+// Select all work experience tiles
+const experienceTiles = document.querySelectorAll('.experience-tile');
+
+// Add click event to each tile
+experienceTiles.forEach(tile => {
+    tile.addEventListener('click', function() {
+        // Toggle the 'active' class to show/hide details
+        this.classList.toggle('active');
+    });
+});
