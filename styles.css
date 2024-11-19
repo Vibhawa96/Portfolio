@@ -192,19 +192,7 @@ footer a:hover {
     background-color: #f8f8f8;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-    color: #333;
-}
-
-/* Layout for the two-sided work experience */
+/* General container for the work experience */
 .experience-wrapper {
     display: flex;
     justify-content: center;
@@ -239,6 +227,7 @@ h2 {
     width: 100%;
 }
 
+/* Styling for each experience content block */
 .experience-content {
     background-color: #f4f4f4;
     border-radius: 10px;
@@ -247,19 +236,31 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Job titles styling */
 .experience-content h3 {
     margin: 0;
     font-size: 1.6rem;
     color: #333;
 }
 
+/* Timeline date styling */
 .timeline-date {
     font-size: 1rem;
     color: #6A1B9A;
     margin-top: 5px;
 }
 
-.experience-content p {
+/* Description list styling */
+.experience-content ul {
+    list-style: disc;
+    padding-left: 20px; /* Indentation for bullet points */
+    text-align: justify; /* Justify the description text */
+    margin: 0;
+}
+
+/* List items (bullet points) */
+.experience-content li {
+    margin-bottom: 10px; /* Space between each bullet point */
     font-size: 1.1rem;
     color: #555;
 }
@@ -284,6 +285,11 @@ h2 {
 
     .central-line {
         display: none; /* Hide central line on mobile */
+    }
+
+    /* Adjust the experience content for better mobile viewing */
+    .experience-content {
+        padding: 15px;
     }
 }
 
