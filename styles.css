@@ -230,51 +230,106 @@ h2 {
     gap: 20px; /* Space between each work experience item */
 }
 
-/* Work Experience Items */
+/* Experience Section */
+#experience {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Layout for the work experience section */
+.experience-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Central Line */
+.central-line {
+    width: 2px;
+    background-color: #6A1B9A; /* Purple color */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+}
+
+/* Left Side Work Experience */
+.experience-left {
+    width: 60%; /* Adjust width to take up most of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px; /* Space between each work experience item */
+}
+
+/* Work Experience Item */
 .experience-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 30px;
     position: relative;
     width: 100%;
 }
 
+/* Content of Work Experience Item */
 .experience-content {
     background-color: #f4f4f4;
     border-radius: 10px;
     padding: 20px;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left; 
+    text-align: left; /* Left-align the text */
 }
 
+/* Title and Time Range */
 .experience-content h3 {
     margin: 0;
     font-size: 1.6rem;
     color: #333;
-}
-
-.experience-content ul {
-    margin-top: 20px; /* Space between the title/date and the list */
-    list-style-type: disc; /* Display bulleted list */
-    margin-left: 20px; /* Indentation for the list */
+    text-align: center; /* Center title */
 }
 
 .timeline-date {
     font-size: 1rem;
     color: #6A1B9A;
     margin-top: 5px;
+    text-align: center; /* Center time range */
 }
 
-.experience-content p {
+/* Bulleted List for Descriptions */
+.experience-content ul {
+    margin-top: 20px;
+    list-style-type: disc; /* Bullets */
+    margin-left: 20px; /* Indentation */
+}
+
+.experience-content ul li {
     font-size: 1.1rem;
     color: #555;
+    margin-bottom: 10px;
 }
 
 /* Work Experience Hover Effects */
 .experience-item:hover .experience-content {
     background-color: #6A1B9A;
     color: white;
+}
+
+.experience-item:hover .icon {
+    background-color: #333;
 }
 
 /* Mobile Responsiveness */
@@ -286,7 +341,6 @@ h2 {
 
     .experience-left {
         width: 100%;
-        margin-bottom: 20px;
     }
 
     .central-line {
