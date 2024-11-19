@@ -278,9 +278,9 @@ footer a:hover {
 /* Timeline date styling */
 .timeline-date {
     font-size: 1rem;
-    color: #6A1B9A;
+    color: #333;
     margin-top: 5px;
-    margin-bottom: 15px; /* Added margin-bottom for spacing between date and description */
+    margin-bottom: 30px; /* Added margin-bottom for spacing between date and description */
 }
 
 /* Description list styling */
@@ -295,12 +295,12 @@ footer a:hover {
 .experience-content li {
     margin-bottom: 10px; /* Space between each bullet point */
     font-size: 1.1rem;
-    color: #555;
+    color: #030000; /* Description font color */
 }
 
 /* Work Experience Hover Effects */
 .experience-item:hover .experience-content {
-    background-color: #6A1B9A;
+    background-color: #bababa;
     color: white;
 }
 
