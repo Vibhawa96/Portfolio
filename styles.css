@@ -250,10 +250,42 @@ footer a:hover {
     gap: 20px; /* Space between each work experience item */
 }
 
+/* Experience Section */
+#experience {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+/* General container for the work experience */
+.experience-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Central Line */
+.central-line {
+    width: 2px;
+    background-color: #6A1B9A; /* Purple color */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+/* Left Side Work Experience */
+.experience-left {
+    width: 60%; /* Adjust width to take up most of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px; /* Space between each work experience item */
+}
+
 /* Work Experience Items */
 .experience-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center; /* Align logo and text horizontally */
     margin-bottom: 30px;
     position: relative;
     width: 100%;
@@ -266,6 +298,16 @@ footer a:hover {
     padding: 20px;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 15px; /* Space between logo and text */
+}
+
+/* Styling for company logo */
+.company-logo {
+    width: 50px; /* Set width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: round the corners of the logo */
 }
 
 /* Job titles styling */
@@ -278,9 +320,9 @@ footer a:hover {
 /* Timeline date styling */
 .timeline-date {
     font-size: 1rem;
-    color: #333;
+    color: #6A1B9A;
     margin-top: 5px;
-    margin-bottom: 30px; /* Added margin-bottom for spacing between date and description */
+    margin-bottom: 20px; /* Added margin-bottom for spacing between date and description */
 }
 
 /* Description list styling */
@@ -295,12 +337,12 @@ footer a:hover {
 .experience-content li {
     margin-bottom: 10px; /* Space between each bullet point */
     font-size: 1.1rem;
-    color: #030000; /* Description font color */
+    color: #555;
 }
 
 /* Work Experience Hover Effects */
 .experience-item:hover .experience-content {
-    background-color: #bababa;
+    background-color: #6A1B9A;
     color: white;
 }
 
@@ -323,6 +365,11 @@ footer a:hover {
     /* Adjust the experience content for better mobile viewing */
     .experience-content {
         padding: 15px;
+    }
+
+    /* Adjust logo size for mobile */
+    .company-logo {
+        width: 40px; /* Slightly smaller logo for mobile */
     }
 }
 
